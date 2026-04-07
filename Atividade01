@@ -1,0 +1,19 @@
+# Aula dia 07/04
+select * from matricula
+
+select nome, curso from aluno
+
+select * from aluno where curso = 'Computacao'
+
+select * from aluno where cidade = 'Maringa'
+
+select * from aluno order by nome
+
+select * from aluno order by ano_ingresso
+
+select * from aluno where ano_ingresso >= 2022
+
+select * from aluno where nome like 'A%'
+
+select * from aluno where curso = 'Computacao' or 'Engenharia'
+
