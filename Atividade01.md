@@ -39,3 +39,23 @@
 19 - select semestre, count(*) from matricula group by semestre
 
 20 - select curso, count() from aluno group by curso having count() > 1
+
+21 - 
+
+22 - 
+
+23 - 
+
+24 - 
+
+25 - 
+
+26 - 
+
+27 - 
+
+28 - 
+
+29 - 
+
+30 - 
