@@ -40,7 +40,7 @@
 
 20 - select curso, count() from aluno group by curso having count() > 1
 
-21 - 
+21 - select nome, situacao from aluno join matricula on (aluno.id = matricula.aluno_id);
 
 22 - 
 
