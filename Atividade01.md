@@ -49,16 +49,41 @@
 from matricula as m join disciplina as d join aluno as a 
 ON(m.aluno_id = a.id and d.id = m.disciplina_id);
 
-24 - 
+24 - SELECT *
+from aluno a 
+join matricula m on a.id = m.aluno_id
+join disciplina d on m.disciplina_id = d.id
+where d.departamento = 'Computacao'
 
-25 - 
+25 - select distinct a.nome
+from aluno a
+join matricula m on a.id = m.aluno_id
+where situacao = 'Reprovado'
 
-26 - 
+26 - select a.nome, d.nome
+from aluno a
+join matricula m on a.id = m.aluno_id
+join disciplina d on m.disciplina_id = d.id
+where curso = 'Computacao';
 
-27 - 
+27 - select a.nome, AVG(m.nota) as media_notas 
+from aluno a
+join matricula m on a.id = m.aluno_id
+GROUP BY a.id, a.nome
 
-28 - 
+28 - select a.nome, count(m.disciplina_id) as total_disciplinas
+from aluno a
+join matricula m on a.id = m.aluno_id
+GROUP BY a.id, a.nome
 
-29 - 
+29 - select a.nome, AVG(m.nota) as media_final
+from aluno a 
+join matricula m on a.id = m.aluno_id
+group by a.id, a.nome
+having AVG(m.nota) > 8;
 
-30 - 
+30 - select d.departamento, count(m.id) as total_matriculas
+from disciplina d 
+join matricula m on d.id = m.disciplina_id
+group by d.departamento
+order by total_matriculas
