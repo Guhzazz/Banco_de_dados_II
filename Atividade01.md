@@ -1,6 +1,6 @@
 # Aula dia 07/04
 
-1 - ´´´select * from matricula´´´
+1 - select * frommatricula
 
 2 - select nome, curso from aluno
 
