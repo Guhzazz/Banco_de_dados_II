@@ -1,7 +1,7 @@
 # Aula dia 07/04
 
 1.
- ```select * frommatricula```
+ `select * frommatricula`
 
 2.
 ``` select nome, curso from aluno```
