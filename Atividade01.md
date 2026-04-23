@@ -1,8 +1,10 @@
 # Aula dia 07/04
 
-1 - select * frommatricula
+1.
+ ```select * frommatricula```
 
-2 - select nome, curso from aluno
+2.
+``` select nome, curso from aluno```
 
 3 - select * from aluno where curso = 'Computacao'
 
