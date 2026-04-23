@@ -30,15 +30,20 @@
 10.
 ```select * from disciplina where carga_horaria > 60 and carga_horaria < 80;```
 
-11 - select count(*) from aluno
+11.
+```select count(*) from aluno```
 
-12 - select AVG(nota) from matricula
+12.
+```select AVG(nota) from matricula```
 
-13 - select max(nota) from matricula
+13.
+```select max(nota) from matricula```
 
-14 - select min(nota) from matricula
+14.
+```select min(nota) from matricula```
 
-15 - select SUM(carga_horaria) from disciplina
+15.
+```select SUM(carga_horaria) from disciplina```
 
 16 - select curso, count(*) from aluno group by curso
 
