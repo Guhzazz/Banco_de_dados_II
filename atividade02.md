@@ -34,4 +34,6 @@
 30. A atomicidade é a garantia de que uma transação composta por múltiplas etapas seja tratada como uma unidade única e indivisível, ou seja, ou ela é um sucesso total, ou ela é completamente desfeita
 31. Significa dizer que os dados fazem sentido lógico para o sistema, as tansações asseguram que se o banco começa em um aestado "válido" ele deve terminar em um estado igualmente "válido.
 32. O isolamento é a propriedade que define como e quando as mudanças feitas por uma transação se tornam visíveis para as outras. Sem o isolamente um usuário poderia interferir acidentalmente no trabalho do outro, gerando dados inconsistentes.
-33. 
+33. DIzer que uma transação é durável significa que após o commit o banco assegura que os dados estão gravados de forma permanente e não volátil.
+34. O controle de concorrência é o conjunto de regras e mecanismos que um SGBD utiliza para gerenciar a execução simultânea de várias transações. Sem o controle de concorrência, o banco de dados falharia em manter a propriedade de Isolamento do ACID.
+35. O lock é o mecanismo fundamental que o banco de dados utiliza para implementar o controle de concorrência pessimista. Sua função é atuar como um "semafóro" ou "tranca", impedindo que múltiplas transações acessem ou modifiquem o mesmo dado simultaneamente de forma conflitante.
