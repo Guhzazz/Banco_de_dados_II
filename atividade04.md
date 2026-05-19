@@ -1,4 +1,4 @@
-# Questões transações
+# Atividade Prática
 
 1. Precisamos saber o estado anterior e estático dos dados para verificar como o sistema lida com acessos e escritas simultâneas.
 2. Para verificar se o estado é consistente após transações concorrentes, é essencial que se parta de um estado também consistente.
@@ -15,4 +15,13 @@
 13. Pode haver o fenômeno de de atualização perdida, onde uma transição sobrescreve a alteração da outra.
 14. é possível notar o bloqueio por que não há mensagem de sucesso, sem a possibilidade de executar novos comandos, pois fica em estado de espera.
 15. por que ao liberar o lock ao fim da transação, isso garante que a outra transação vai fazer a nova alteração em cima do valor atualizado.
-16. 
+16. por que já havia um bloqueio feito pela outra.
+17. Na select comum, não há há bloqueio da linha do registro. Com for update, a transação ja demonstra interesse de escrever na etapa de leitura e tranca para evitar valores inconsistentes.
+18. Seria 700.
+19. porque para ambas as transações tudo ocorreu certo como se elas tivessem ocorrido e tido efeito no banco de dados, mas é como se a T1 nunca tivesse ocorrido.
+20. Por que os sgbd implementam bloqueio à nível de linha.
+21. Que se não houvesse disputa pelo mesmo registro, o SGBD lidaria bem melhor com vários acessos simultâneos, por que o verdadeiro gargalo é a disputa pelos mesmos recursos.
+22. Se um bloqueio for mantido por muito tempo, formará-se um fila de espera de transações que querem alterar aquela linha de dados bloqueado, gerando gargalo.
+23. por que elas seguram as travas de segurança por muito tempo, até acabarem.
+24. Refazendo as operações que constam no log de operações e vendo se os dados batem matematicamente.
+25. É importante para ver se houve algum dado incosistente em decorrẽncia de um algoritmo inadequado de isolamento e tratamento de concorrẽncia.
