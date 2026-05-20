@@ -25,3 +25,16 @@
 23. por que elas seguram as travas de segurança por muito tempo, até acabarem.
 24. Refazendo as operações que constam no log de operações e vendo se os dados batem matematicamente.
 25. É importante para ver se houve algum dado incosistente em decorrẽncia de um algoritmo inadequado de isolamento e tratamento de concorrẽncia.
+
+# Atividade dissertativa
+
+26. A concorrência acontece quando duas ou mais transações tentam acessar uma linha de registro ao mesmo instante de tempo.
+27. Os bloqueios servem para garantir consistência na alteração de dados e isolamento, de forma que múltiplos acessos e alterações ao mesmo recurso, se implementadas com bloqueio, tem um output similar ao feito de forma serial.
+28. Enquanto acessar registros iguais ao mesmo tempo gera disputa e concorrência, acessar registro diferentes podem ser feitos de forma paralela sem um afetar o outro.
+29. por que ele não abre brechas para leituras indesejáveis na lacuna entra a leitura e a atualização de fato, o que não ocorre no select comum.
+30. Significa que uma transação estava modificando uma linha de dados e impôs uma tranca áquela linha, a qual só vai ser liberada quando a transação finalizar, liberando o acesso á linha para as transações em espera.
+31. Atualização perdida ocorre quando duas transações fazem uma atualização á mesma linha de dados e pelo menos uma delas é sobrescrita pela outra, de forma que o valor final reflete uma alteração só e não duas.
+32. O isolamento em sistemas multiusuário é essencial para evitar que transações leiam valores instáveis e incosistentes de outras e façam mudanças em cima disso, além de garantir que os valores não irão mudar no meio de uma transação crítica.
+33. Se há a leitura de um dado alterado por uma transação ainda não concluída, corre-se o risco que esta sofra rollback e a leitura, que talvez seja usada para tomar decisões, tenha se baseado num dado que não era nem de fato válido.
+34. = resposta 23
+35. 
