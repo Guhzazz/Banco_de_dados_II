@@ -37,4 +37,13 @@
 32. O isolamento em sistemas multiusuário é essencial para evitar que transações leiam valores instáveis e incosistentes de outras e façam mudanças em cima disso, além de garantir que os valores não irão mudar no meio de uma transação crítica.
 33. Se há a leitura de um dado alterado por uma transação ainda não concluída, corre-se o risco que esta sofra rollback e a leitura, que talvez seja usada para tomar decisões, tenha se baseado num dado que não era nem de fato válido.
 34. = resposta 23
-35. 
+35. Sem o isolamento, falhas como leitura suja e atualização perdida podem acontecer, afetando a consistência dos dados.
+36. uma loja virtual em que dois clientes compram o mesmo item ao mesmo tempo. Haverá uma disputa para decrementar a quantidade desse item da tabela de estoque.
+37. Pode ser que as operações simultâneas não manipulam a mesma linha, não havendo possibilidade de conflito.
+38. O banco de dados implementam níveis de isolamento e técnicas otimistas para evitar o corrompimento.
+39. Poderia haver um erro de consistẽncia em que duas transações decidem tirar o dinheiro de uma conta baseado no saldo atual. Para decidir se elas vão decrementar ou não, precisam ver se isso não gerará valores negativos (que fazem parte da regra do negócio). Como elas lêem sem travas, é possível que haja um decremento duplo que desrespeite a regra de negócio e o saldo da conta fica negativo.
+40. Observar a ordem de execução é importante porque os problemas de concorrência são condições de corrida que dependem estritamente do tempo. Mapear o momento exato de cada comando é essencial para conseguir reproduzir o teste, já que inverter a sequência das operações muda totalmente o resultado final do banco e impede a validação correta dos bloqueios (locks) entre as sessões.
+
+# Atividade integrada
+
+41. A concorrência representa o desafio do sistema, que é gerenciar múltiplos usuários acessando os mesmos dados simultaneamente. Para evitar o caos desse cenário, o isolamento atua como a diretriz estratégica, definindo o nível de visibilidade que uma transação tem sobre as alterações ainda não confirmadas das outras. Na prática, esse isolamento é assegurado pelos bloqueios (locks), os mecanismos operacionais que travam registros temporariamente e forçam filas de espera quando há disputa direta por escrita, garantindo que as operações concorrentes ocorram de forma ordenada, segura e sem gerar anomalias na base de dados.
