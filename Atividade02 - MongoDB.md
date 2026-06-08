@@ -1,20 +1,21 @@
-# Exerício 1
-db.usuarios.find()
+# Parte 1 - Primeiros Contatos
+## Exerício 1
+`db.usuarios.find()`
 
-# Exercício 2
-db.conteudos.find()
+## Exercício 2
+`db.conteudos.find()`
 
-# Exercício 3
-db.usuarios.find({cidade: "Curitiba"})
+## Exercício 3
+`db.usuarios.find({cidade: "Curitiba"})`
 
-# Exercício 4
-db.conteudos.find({tipo: "filme"})
+## Exercício 4
+`db.conteudos.find({tipo: "filme"})`
 
-# Exercício 5
-db.conteudos.find({titulo: "Matrix"})
+## Exercício 5
+`db.conteudos.find({titulo: "Matrix"})`
 
-# Exercício 6
-db.usuarios.insertOne({
+## Exercício 6
+`db.usuarios.insertOne({
     nome: "gustavo",
     email: "ra139067",
     idade: 19,
@@ -22,10 +23,10 @@ db.usuarios.insertOne({
     estado: "Paraná",
     interesses: ["Estudar", "Jogar Video Games"],
     ativo: true
-})
+})`
 
-# Exercício 7
-db.conteudos.insertOne({
+## Exercício 7
+`db.conteudos.insertOne({
   titulo: "De Volta para o Futuro",
   tipo: "filme",
   ano: 1985,
@@ -33,5 +34,5 @@ db.conteudos.insertOne({
   avaliacaoMedia: 8.5,
   duracaoMinutos: 116,
   disponivel: true
-})
+})`
 
