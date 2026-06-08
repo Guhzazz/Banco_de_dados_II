@@ -36,3 +36,22 @@
   disponivel: true
 })`
 
+# Parte 2 - Operadores de Comparação
+
+## Exercício 8
+`db.conteudos.find({ avaliacaoMedia: { $gt: 9 } })`
+
+## Exercício 9
+`db.usuarios.find({idade: { $gt: 30 } })`
+
+## Exercício 10
+`db.conteudos.find({ ano: { $lt: 2010 } })`
+
+## Exercício 11
+`db.conteudos.find({ano: { $gte: 2015} })`
+
+## Exercício 12
+`db.conteudos.find({avaliacaoMedia: { $lte: 8.8 }})`
+
+## Exercício 13
+`db.usuarios.find({ estado: { $ne: "PR" } })`
