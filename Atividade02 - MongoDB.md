@@ -55,3 +55,23 @@
 
 ## Exercício 13
 `db.usuarios.find({ estado: { $ne: "PR" } })`
+
+# Parte 3 - Consultas com Arrays
+
+## Exercício 14
+`db.conteudos.find({ genero: "Drama"})`
+
+## Exercício 15
+`db.conteudos.find({genero: "Ficção Científica"})`
+
+## Exercício 16
+`db.conteudos.find({$and:[{ genero: "Drama"}, { genero: "Ficção Científica"}]})`
+
+## Exercício 17
+`db.usuarios.find({interesses: "Suspense"})`
+
+## Exercício 18
+`db.conteudos.find($or[{genero: "Terror"}, {genero: "Mistério"}])`
+
+## Exercício 19
+`db.conteudo.find({genero: {$not: {"Comédia"}}})`
