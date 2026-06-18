@@ -75,3 +75,21 @@
 
 ## Exercício 19
 `db.conteudo.find({genero: {$not: {"Comédia"}}})`
+
+# Parte 4 - Objetos Aninhados
+
+## Exercício 20
+`db.conteudos.find({ "diretor.nome" : "Christopher Nolan" })`
+
+## Exercício 21
+`db.conteudos.find({ "diretor.pais" : "Reino Unido"})`
+
+## Exercício 22
+`db.usuarios.find({"endereco.bairro" : "Centro"})`
+
+## Exercício 23
+`db.usuarios.find({ endereco:{ $exists: true}})`
+
+## Exercício 24
+`db.usuarios.find({ endereco:{ $exists: false}})`
+
