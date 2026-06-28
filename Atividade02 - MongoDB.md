@@ -93,3 +93,33 @@
 ## Exercício 24
 `db.usuarios.find({ endereco:{ $exists: false}})`
 
+# Atualizações Básicas
+## Exercício 25
+`db.usuarios.updateOne(
+  { nome: "Carlos Lima" },
+  { $set: { ativo: true } }
+)`
+
+## Exercício 26
+`db.conteudos.updateOne(
+  { titulo: "Cidade de Deus" },
+  { $set: { disponivel: true } }
+)`
+
+## Exercício 27
+`db.conteudos.updateOne(
+  { titulo: "Matrix" },
+  { $set: { idiomaOriginal: "Inglês" } }
+)`
+
+## Exercício 28
+`db.conteudos.updateOne(
+  { titulo: "Interestelar" },
+  { $set: { classificacao: "10+" } }
+)`
+
+## Exercício 29 
+`db.conteudos.updateOne(
+  { titulo: "Avatar" },
+  { $set: { avaliacaoMedia: 9.0 } }
+)`
