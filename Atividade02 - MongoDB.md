@@ -138,14 +138,77 @@
 )`    
 
 ## Exercício 32
-`db.conteudos.updateMany(
+`db.conteudos.updateOne(
     {titulo: "Matrix"},
     {$push :{genero: "Clássico"} }
 )`    
 
-## Exercício 32
-`db.conteudos.updateMany(
+## Exercício 33
+`db.conteudos.updateOne(
     {titulo: "Matrix"},
     {$pull :{genero: "Clássico"} }
 )`    
+
+## Exercício 34
+`db.usuarios.updateOne(
+    {nome: "Beatriz Nunes"},
+    {$unset :{telefone: ""} }
+)`   
+
+## Exercício 35
+`db.assinaturas.updateMany(
+    {plano: "Premium"},
+    {$push :{beneficios: "sem anúncios"} }
+)`
+
+# Operadores lógicos
+## Exercício 36
+`db.conteudos.find({
+  $and: [
+    { tipo: "filme" },          
+    { avaliacaoMedia: { $gt: 9 } } 
+  ]
+});`
+
+## Exercício 37
+`db.usuarios.find({
+  $or: [
+    { cidade: "Curitiba" },          
+    {cidade: "Maringá"" } 
+  ]
+});`
+
+## Exercício 38
+`db.conteudos.find({
+  $or: [
+    {tipo: "série" },          
+    {tipo: "documentário" } 
+  ]
+});`
+
+## Exercício 38
+`db.conteudos.find({
+  $or: [
+    {avaliacaoMedia: {$gt: 9} },          
+    {visualizacoes: {$gt: 200000} } 
+  ]
+});`
+
+## Exercício 39
+`db.conteudos.find({
+  $or: [
+    {avaliacaoMedia: {$gt: 9} },          
+    {visualizacoes: {$gt: 200000} } 
+  ]
+});`
+
+## Exercício 38
+`db.usuarios.find({
+  $or: [
+    {ativo: true },          
+    {idade: {$lt: 30} } 
+  ]
+});`
+
+
     
