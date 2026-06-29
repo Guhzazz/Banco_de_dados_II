@@ -74,7 +74,7 @@
 `db.conteudos.find($or[{genero: "Terror"}, {genero: "Mistério"}])`
 
 ## Exercício 19
-`db.conteudo.find({genero: {$not: {"Comédia"}}})`
+`db.conteudo.find({genero: {$ne: {"Comédia"}}})`
 
 # Parte 4 - Objetos Aninhados
 
