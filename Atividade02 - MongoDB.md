@@ -124,7 +124,7 @@
   { $set: { avaliacaoMedia: 9.0 } }
 )`
 
-# Atualizações básicas
+# Atualizações com operadores
 ## Exercício 30
 `db.conteudos.updateOne(
     {titulo: "Matrix"},
