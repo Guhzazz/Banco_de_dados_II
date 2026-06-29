@@ -123,3 +123,29 @@
   { titulo: "Avatar" },
   { $set: { avaliacaoMedia: 9.0 } }
 )`
+
+# Atualizações básicas
+## Exercício 30
+`db.conteudos.updateOne(
+    {titulo: "Matrix"},
+    {$inc :{ visualizacoes: 1} }
+)` 
+
+## Exercício 31
+`db.conteudos.updateMany(
+    {},
+    {$inc :{visualizacoes: 1000} }
+)`    
+
+## Exercício 32
+`db.conteudos.updateMany(
+    {titulo: "Matrix"},
+    {$push :{genero: "Clássico"} }
+)`    
+
+## Exercício 32
+`db.conteudos.updateMany(
+    {titulo: "Matrix"},
+    {$pull :{genero: "Clássico"} }
+)`    
+    
