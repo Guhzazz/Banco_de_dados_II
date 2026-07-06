@@ -259,3 +259,22 @@ A referência entre coleções deve ser usada quando os dados crescem indefinida
 
 ## Exercício 53
 Dados incorporados são ideais quando as informações são intimamente ligadas e lidas quase sempre juntas, como um endereço dentro do perfil do usuário. Também devem ser usados quando os dados secundários possuem um tamanho controlado e previsível, garantindo que o documento nunca passe do limite de 16 MB, ou quando você precisa da máxima velocidade de leitura, recuperando tudo em uma única busca no disco.
+
+# Prints dos resultados obtidos nas consultas
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205604" src="https://github.com/user-attachments/assets/be5780eb-7dc0-46ed-94bb-43cadd837f84" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205717" src="https://github.com/user-attachments/assets/63f0b9b6-587b-4888-b960-019425f5beb3" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205705" src="https://github.com/user-attachments/assets/c4023adc-f37f-4039-81d3-41728d797a5b" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205700" src="https://github.com/user-attachments/assets/9c645e6d-cf3a-4f34-923e-8e9e67bb004f" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205637" src="https://github.com/user-attachments/assets/f001c068-360c-4f99-9296-cc4693e6723b" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205629" src="https://github.com/user-attachments/assets/d9156325-5ba2-46a6-a923-500813649749" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205944" src="https://github.com/user-attachments/assets/b69b60d5-866d-405e-b0e9-753e8a0b724c" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205937" src="https://github.com/user-attachments/assets/68553161-1351-4089-9c8a-92f4601ec165" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205920" src="https://github.com/user-attachments/assets/26c7aef8-0ea3-4535-85fb-5a29609a014d" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205913" src="https://github.com/user-attachments/assets/169b60d6-47e3-4fff-822d-fb95f135cc1c" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205842" src="https://github.com/user-attachments/assets/3795b9be-591e-4032-af8f-f57794d1fe8a" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205825" src="https://github.com/user-attachments/assets/6909918f-a707-4d64-895f-bad99ecf5760" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205733" src="https://github.com/user-attachments/assets/7015ccef-fcb7-4354-862e-2e237b7104d1" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205725" src="https://github.com/user-attachments/assets/7ed17254-56d6-45df-b30e-216db0e32a4a" />
+<img width="1920" height="1200" alt="Captura de tela 2026-06-29 205620" src="https://github.com/user-attachments/assets/2b7a927f-f5c6-4893-aa2a-161b4748985f" />
+
+
