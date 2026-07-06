@@ -248,14 +248,14 @@
 );`
 
 ## Exercício 50
-` Ao guardar tudo em um documento, a eficiência de leitura cresceria, mas os documentos ficariam gigantes e haveria duplicação de dados. Ao separar em coleções, é mais fácil atualizar visto que é só mudar um documento ao invés de alterar muitas referências.
-`
+ Ao guardar tudo em um documento, a eficiência de leitura cresceria, mas os documentos ficariam gigantes e haveria duplicação de dados. Ao separar em coleções, é mais fácil atualizar visto que é só mudar um documento ao invés de alterar muitas referências.
+
 
 ## Exercício 51
-` Ao se aninhar informações dentro dos documentos, a vantagem é que não é necessário cruzar coleções para se ter oq precisa na consulta. Porém, isso aumenta o tamanho dos documentos e pode haver um estouro se os dados dentro do documento crescer indefinidamente.`
+ Ao se aninhar informações dentro dos documentos, a vantagem é que não é necessário cruzar coleções para se ter oq precisa na consulta. Porém, isso aumenta o tamanho dos documentos e pode haver um estouro se os dados dentro do documento crescer indefinidamente.
 
 ## Exercício 52
-`A referência entre coleções deve ser usada quando os dados crescem indefinidamente (como históricos e avaliações), evitando estourar o limite de 16 MB por documento. Ela também é ideal quando a informação é compartilhada por vários registros, o que evita duplicar dados e facilita atualizações, ou quando as informações precisam de consultas e relatórios independentes.`
+A referência entre coleções deve ser usada quando os dados crescem indefinidamente (como históricos e avaliações), evitando estourar o limite de 16 MB por documento. Ela também é ideal quando a informação é compartilhada por vários registros, o que evita duplicar dados e facilita atualizações, ou quando as informações precisam de consultas e relatórios independentes.
 
 ## Exercício 53
-`Dados incorporados são ideais quando as informações são intimamente ligadas e lidas quase sempre juntas, como um endereço dentro do perfil do usuário. Também devem ser usados quando os dados secundários possuem um tamanho controlado e previsível, garantindo que o documento nunca passe do limite de 16 MB, ou quando você precisa da máxima velocidade de leitura, recuperando tudo em uma única busca no disco.`
+Dados incorporados são ideais quando as informações são intimamente ligadas e lidas quase sempre juntas, como um endereço dentro do perfil do usuário. Também devem ser usados quando os dados secundários possuem um tamanho controlado e previsível, garantindo que o documento nunca passe do limite de 16 MB, ou quando você precisa da máxima velocidade de leitura, recuperando tudo em uma única busca no disco.
