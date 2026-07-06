@@ -1,18 +1,23 @@
 # Parte 1 - Primeiros Contatos
 ## Exerício 1
 `db.usuarios.find()`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fe930ecb-cc91-4c8b-a02e-ff6bfbe89eba" />
 
 ## Exercício 2
 `db.conteudos.find()`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/06926d28-ebcd-4e5a-8ca2-094aca89ee35" />
 
 ## Exercício 3
 `db.usuarios.find({cidade: "Curitiba"})`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f4b8a54f-5417-4be9-8315-5f82bfe0f9c7" />
 
 ## Exercício 4
 `db.conteudos.find({tipo: "filme"})`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ae48fddc-6c79-4c66-b0dc-440f009d84c0" />
 
 ## Exercício 5
 `db.conteudos.find({titulo: "Matrix"})`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/6be71f46-9c82-44c6-8aca-79da151faca9" />
 
 ## Exercício 6
 `db.usuarios.insertOne({
@@ -24,6 +29,7 @@
     interesses: ["Estudar", "Jogar Video Games"],
     ativo: true
 })`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/56f28039-0098-419b-a0df-c2adee96c515" />
 
 ## Exercício 7
 `db.conteudos.insertOne({
@@ -35,26 +41,35 @@
   duracaoMinutos: 116,
   disponivel: true
 })`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1e018d24-9f6f-4dfa-ae93-dbbad1c54eb8" />
 
 # Parte 2 - Operadores de Comparação
 
 ## Exercício 8
 `db.conteudos.find({ avaliacaoMedia: { $gt: 9 } })`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/853a12ce-d458-476f-9dac-0908ce0a6ac2" />
 
 ## Exercício 9
 `db.usuarios.find({idade: { $gt: 30 } })`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bfdcd2f2-46fc-4432-a9b1-23fe649d2273" />
 
 ## Exercício 10
 `db.conteudos.find({ ano: { $lt: 2010 } })`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/1a40af42-dacb-42ee-98bf-fb21f7b9514a" />
 
 ## Exercício 11
 `db.conteudos.find({ano: { $gte: 2015} })`
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/21b9f58c-c253-4ef2-bab2-e44db6ca3ca4" />
 
 ## Exercício 12
 `db.conteudos.find({avaliacaoMedia: { $lte: 8.8 }})`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/423a1af7-0088-4961-a33f-46be6a2977a6" />
+
 ## Exercício 13
 `db.usuarios.find({ estado: { $ne: "PR" } })`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e4d91266-90d0-4ad5-aae6-bafe3095b746" />
 
 # Parte 3 - Consultas com Arrays
 
@@ -70,28 +85,44 @@
 ## Exercício 17
 `db.usuarios.find({interesses: "Suspense"})`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9443d319-278f-4e43-8ff3-17d3301ed80f" />
+
 ## Exercício 18
 `db.conteudos.find($or[{genero: "Terror"}, {genero: "Mistério"}])`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/266bfd12-11c3-47e5-bb8d-f0be0e97e37f" />
+
 ## Exercício 19
 `db.conteudo.find({genero: {$ne: {"Comédia"}}})`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/9336c0c7-6afd-445c-ac4c-561683d519dd" />
 
 # Parte 4 - Objetos Aninhados
 
 ## Exercício 20
 `db.conteudos.find({ "diretor.nome" : "Christopher Nolan" })`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/eb80665d-393f-4597-8091-bd565245e7c6" />
+
 ## Exercício 21
 `db.conteudos.find({ "diretor.pais" : "Reino Unido"})`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/b5e7d90e-b902-4a89-bdfc-47b9ba506deb" />
 
 ## Exercício 22
 `db.usuarios.find({"endereco.bairro" : "Centro"})`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/e5f109c4-45ee-4cff-b395-9e0738f2a6c4" />
+
 ## Exercício 23
 `db.usuarios.find({ endereco:{ $exists: true}})`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/df39306d-3df8-4a08-8af1-a48d8068075d" />
+
 ## Exercício 24
 `db.usuarios.find({ endereco:{ $exists: false}})`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/11eef759-c967-4f05-96c4-287dfbc688c3" />
 
 # Parte 5 - Atualizações Básicas
 ## Exercício 25
@@ -100,11 +131,15 @@
   { $set: { ativo: true } }
 )`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/47ecbdce-420c-42bb-a1c9-5056c2110d46" />
+
 ## Exercício 26
 `db.conteudos.updateOne(
   { titulo: "Cidade de Deus" },
   { $set: { disponivel: true } }
 )`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/ad004fe9-a075-486e-91fc-b11523d56005" />
 
 ## Exercício 27
 `db.conteudos.updateOne(
@@ -112,17 +147,24 @@
   { $set: { idiomaOriginal: "Inglês" } }
 )`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/31d84fba-82ee-4bb3-bf18-477682fcbeb8" />
+
 ## Exercício 28
 `db.conteudos.updateOne(
   { titulo: "Interestelar" },
   { $set: { classificacao: "10+" } }
 )`
 
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/62c9d1e7-8ec4-463d-b0ae-a6272b2d1daa" />
+
+
 ## Exercício 29 
 `db.conteudos.updateOne(
   { titulo: "Avatar" },
   { $set: { avaliacaoMedia: 9.0 } }
 )`
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/4b973bbf-43ad-40bb-9051-39b683e14372" />
 
 # Parte 6 - Atualizações com operadores
 ## Exercício 30
@@ -260,7 +302,7 @@ A referência entre coleções deve ser usada quando os dados crescem indefinida
 ## Exercício 53
 Dados incorporados são ideais quando as informações são intimamente ligadas e lidas quase sempre juntas, como um endereço dentro do perfil do usuário. Também devem ser usados quando os dados secundários possuem um tamanho controlado e previsível, garantindo que o documento nunca passe do limite de 16 MB, ou quando você precisa da máxima velocidade de leitura, recuperando tudo em uma única busca no disco.
 
-# Prints dos resultados obtidos nas consultas
+# Prints dos demais resultados obtidos nas consultas
 <img width="1920" height="1200" alt="Captura de tela 2026-06-29 205604" src="https://github.com/user-attachments/assets/be5780eb-7dc0-46ed-94bb-43cadd837f84" />
 <img width="1920" height="1200" alt="Captura de tela 2026-06-29 205717" src="https://github.com/user-attachments/assets/63f0b9b6-587b-4888-b960-019425f5beb3" />
 <img width="1920" height="1200" alt="Captura de tela 2026-06-29 205705" src="https://github.com/user-attachments/assets/c4023adc-f37f-4039-81d3-41728d797a5b" />
